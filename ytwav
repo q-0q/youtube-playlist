@@ -1,0 +1,3 @@
+#!/bin/sh
+
+yt-dlp_macos --extract-audio --no-keep-video --audio-format "wav" -o "%(title)s.wav" -P "/Users/jackwithers/Downloads/$2" $1

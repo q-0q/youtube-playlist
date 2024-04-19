@@ -1,0 +1,9 @@
+#!/bin/sh
+
+file=$1
+folder=$2
+
+while read query; do
+  url=$(python3 fetch-yt-url.py $query)
+  ytwav $url $folder
+done < $file
